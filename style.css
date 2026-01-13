@@ -13,12 +13,15 @@ body {
 /*container*/
 .main-container{
     display: flex;
-    flex: 1;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -28,16 +31,18 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
                 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #FFFFFF;
+    border-radius: 20px 10px 10px 20px;
     margin: 50px 20px;
 }
-.container.calculator{
+/*.container.calculator{
     background-color: #FFFFFF;
     border-radius: 20px 10px 10px 20px;
 }
 .container.result{
     background-color: yellow;
     border-radius: 10px 20px 20px 10px;
-}
+}*/
 /*-------------------------------------------------------------------*/
 /*ด้านใน container-calculator*/
     /*ด้านบนสุดหัวข้อ (header)*/
@@ -51,18 +56,99 @@ body {
     color: #3988A4;
 }
     /*สูตร*/
-.formula1{
+.formula{
     width: max-content;
-    margin: 10px auto;
+    margin: 20px auto;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
                 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     padding: 10px;
     color: #0056D2;
 }
+.do-not-need{
+    position: relative;
+    top: 10px;
+}
 
     /*ส่วนที่ 1 การคำนวณเงินได้สุทธิ (section 1)*/
+        /*text ต่างๆ*/
 .topic{
     color: #718096;
+    font-size: 22px;
 }
+.subtopic{
+    color: #026468;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.explain{
+    font-size: 14px;
+    color: #0056D2;
+}
+.sec-2::after{
+    content: 'ไม่เกิน 100,000 บาท';
+    color: red;
+}
+
+/*--------------------------------------------------------------------*/
+.calculation-1{
+    width: auto;
+    padding: 10px;
+    margin: 20px 0px;
+    margin-right: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+        /*คำนวณ รายได้*/
+.input-group{
+    text-align: center;
+}
+.input-group label{
+    font-size: 18px;
+}
+.input-group input{
+    width: 90px;
+    padding: 2px;
+}
+        /*คำนวณ ค่าใช้จ่าย*/
+/*text*/
+.all-text{
+    font-size: 16px;
+}
+/*-----------------------*/
+
+.field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 100px;
+    padding: 20px;
+}
+.item{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    background-color: #0056D2;
+    color: #f7f5f5;
+}
+
+.result{
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    background-color: #9ba9bd;
+    color: black;
+}
+
 
