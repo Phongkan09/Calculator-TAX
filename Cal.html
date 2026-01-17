@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator-TAX</title>
+        <link rel="stylesheet" href="Cal-style.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container calculator">
+                <div class="header">
+                    <div class="topic-text">
+                        ภาษีเงินได้บุคคลธรรมดา
+                    </div>
+                    <div class="formula">
+                        เงินได้สุทธิ × อัตราภาษี = ภาษี
+                        <div class="explain do-not-need">
+                            ผู้ที่มีเงินได้ทั้งปีไม่เกิน 120,000 บาท ไม่ต้องยื่นภาษี
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="section1">
+                    <div class="topic section1">
+                        ส่วนที่ 1 เริ่มจากการคำนวณ เงินได้สุทธิ
+                    </div>
+                    <div class="formula">
+                        รายได้ - ค่าใช้จ่าย - ค่าลดหย่อน
+                        
+                    </div>
+                    <div class="calculation-1">
+                        <div class="topic">
+                            เงินได้สุทธิ
+                        </div>
+                        <hr>
+                        <div class="subtopic">รายได้</div>
+                        <div class="explain">
+                            รายได้ => รายได้ทั้งปี หรือ เงินเดือน × 12
+                        </div>
+                        <div class="input-group">
+                            <input type="text" inputmode="numeric" id="cal-1" required>
+                            <label for="cal-1">รายได้(ต่อเดือน)</label>
+                        </div>
+                        <div class="subtopic">ค่าใช้จ่าย</div>
+                        <div class="explain sec-2">
+                            หักค่าใช้จ่าย => ร้อยละ 50 ของเงินได้ แต่รวมกันต้อง
+                        </div>
+                        <div class="field">
+                            <div>
+                                <div class="item">
+                                    <div class="all-text">รายได้ทั้งปี</div>
+                                </div>
+                                <div class="result"></div>
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="all-text">หักค่าใช้จ่ายได้</div>
+                                </div>
+                                <div class="result"></div>
+                            </div>
+                        </div>
+                        <div class="subtopic">ค่าลดหย่อน</div>
+                        <div class="explain">
+                            รายการที่กฎหมายกำหนดไว้ให้สามารถนำไปหักออกจากเงินได้หลังจากที่หักค่าใช้จ่ายแล้ว
+                        </div>
+                        <div class="column-2">
+                            <div>
+                                <a href="#" class="box action">ค่าลดหย่อนส่วนตัว</a>
+                            </div>
+                            <div>
+                                <a href="#" class="box action">ค่าลดหย่อนคู่สมรส</a>
+                            </div>
+                            <div>
+                                <a href="#" class="box action">ค่าลดหย่อนบุตร</a>
+                            </div>
+                            <div>
+                                <a href="#" class="box action">ค่าลดหย่อนบิดามารดา</a>
+                            </div>
+                            <div>
+                                <a href="#" class="box action">เงินประกันสังคม</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src=""></script>
+    </body>
+</html>
