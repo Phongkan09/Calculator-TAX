@@ -39,7 +39,7 @@
                             รายได้ => รายได้ทั้งปี หรือ เงินเดือน × 12
                         </div>
                         <div class="input-group">
-                            <input type="text" inputmode="numeric" id="cal-1" required>
+                            <input type="text" inputmode="numeric" id="cal-1" oninput="AutoComma()" onblur="Calculator_1(this.value)">
                             <label for="cal-1">รายได้(ต่อเดือน)</label>
                         </div>
                         <div class="subtopic">ค่าใช้จ่าย</div>
@@ -87,6 +87,6 @@
         </div>
 
 
-        <script src=""></script>
+        <script src="Cal-Script.js"></script>
     </body>
 </html>
