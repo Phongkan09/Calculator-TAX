@@ -57,11 +57,14 @@ blockquote p{
     padding-left: 50px;
 }
 /*footer*/
+.foot{
+    border-top: 1px black solid;
+    padding-top: 30px;
+}
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    border-top: 1px black solid;
+    margin-top: 30px;
 }
 .box{
     margin: 30px;
@@ -86,4 +89,52 @@ blockquote p{
 }
 .footer a:hover{
     transform: scale(1.05);
+}
+.footer .done{
+    background-color: #ad1c1c !important;
+}
+
+/*form*/
+.input-group{
+    padding: 10px 20px;
+    position: relative;
+}
+.input-group label[for=num]{
+    font-size: 14px;
+    padding: 0 5px;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    left: 30px;
+    color: #aaa;
+    transition: 0.6s ease all;
+    pointer-events: none;
+    background-color: #f2f2f2;
+}
+.input-group input{
+    width: 25%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.input-group input:focus{
+    border: solid #007bff;
+}
+.input-group input:focus ~ label[for=num]{
+    color: black;
+}
+
+/*hide*/
+.input-group-hide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px 20px;
+}
+.input-group-hide div{
+    width: fit-content;
 }

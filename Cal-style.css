@@ -199,27 +199,37 @@ body {
     display: inline-block;
     transition: all 0.6 ease;
 }
+
 /*.box.action{
     transform: scale(1.1);
     color: #14532D;
 }
-.box.action::before{
+.box::before{
     content: '● ';
 }*/
 
 /*Animation-box-ค่าลดหย่อน*/
-.box::before{
+.box.action::before{
     content: '- ';
     width: 5px;
     display: inline-block;
     margin-right: 5px;
 }
-.box:hover{
+.box.action:hover{
     color: #0056D2;
     transform: scale(1.2);
 }
-.box:hover::before{
+.box.action:hover::before{
     content: '+ ';
+}
+.box.action.done::before{
+    content: '● ' !important;
+}
+/*Animation-notget-ค่าลดหย่อน*/
+/*เมื่อได้ทำการ Add ไปแล้ว*/
+.box.not-get:hover{
+    color: #04b913;
+    transform: scale(1.2);
 }
 
 
